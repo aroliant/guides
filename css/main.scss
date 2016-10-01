@@ -1,39 +1,156 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
+@import "style";
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
 
-$spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+/**
+ * Site footer
+ */
+.site-footer {
+  border-top: 1px solid #e8e8e8;
+  padding: 30px 0; }
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+.footer-heading {
+  font-size: 18px;
+  margin-bottom: 15px; }
 
-// Width of the content area
-$content-width:    800px;
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: 0; }
 
-$on-palm:          600px;
-$on-laptop:        800px;
+.footer-col-wrapper {
+  font-size: 15px;
+  color: #828282;
+  margin-left: -15px; }
 
-// Minima also includes a mixin for defining media queries.
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
+.footer-col {
+  float: left;
+  margin-bottom: 15px;
+  padding-left: 15px; }
 
-// Import partials from the `minima` theme.
-@import "minima";
+.footer-col-1 {
+  width: -webkit-calc(35% - (30px / 2));
+  width: calc(35% - (30px / 2)); }
+
+.footer-col-2 {
+  width: -webkit-calc(20% - (30px / 2));
+  width: calc(20% - (30px / 2)); }
+
+.footer-col-3 {
+  width: -webkit-calc(45% - (30px / 2));
+  width: calc(45% - (30px / 2)); }
+
+@media screen and (max-width: 800px) {
+  .footer-col-1,
+  .footer-col-2 {
+	width: -webkit-calc(50% - (30px / 2));
+	width: calc(50% - (30px / 2)); }
+
+  .footer-col-3 {
+	width: -webkit-calc(100% - (30px / 2));
+	width: calc(100% - (30px / 2)); } }
+@media screen and (max-width: 600px) {
+  .footer-col {
+	float: none;
+	width: -webkit-calc(100% - (30px / 2));
+	width: calc(100% - (30px / 2)); } }
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: -webkit-calc(800px - (30px * 2));
+  max-width: calc(800px - (30px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 30px;
+  padding-left: 30px; }
+
+@media screen and (max-width: 800px) {
+
+.wrapper {
+	max-width: -webkit-calc(800px - (30px));
+	max-width: calc(800px - (30px));
+	padding-right: 15px;
+	padding-left: 15px; 
+}
+.guide ul{
+	display: none !important;
+}
+header ul li.nav-button{
+	display: block !important;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+header ul li.link{
+	display: none !important;
+}
+}
+
+header {
+  background: #FFF;
+  height: 50px;
+  border-bottom: 1px solid #EEE;
+  box-shadow: 1px 1px 1px #EEE; }
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+header ul li {
+  display: inline-block;
+  float: right; }
+
+header ul li.logo {
+  float: left;
+  background: url(/images/compile.min.png);
+  width: 150px;
+  height: 50px;
+  background-size: 150px;
+}
+header ul li.link{
+	display: block;
+}
+header ul li.nav-button{
+	float: left;
+	display: none;
+}
+
+header ul li a {
+  margin: 14px;
+  display: block; }
+
+.guide {
+  margin-top: 50px;
+  display: block; }
+
+.guide ul {
+	display: block;
+  margin: 0px;
+  padding: 0;
+  list-style: none;
+  position: fixed;
+  background: #ffffff;
+  border: 1px solid #EEE;
+  width: 250px;
+  left: 5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  }
+
+.guide ul li ul {
+  position: relative;
+  border: none;
+  display: inline;
+  }
+
+.guide ul li ul li {
+  list-style: none;
+  margin-left: 10px;
+  display: block;
+  }
