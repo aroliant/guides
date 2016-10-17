@@ -9,12 +9,11 @@ category: installation
 {::options parse_block_html="true" /}
 
 * [Introduction](#introduction)
-* [Downloading](#installation)
-* [Installing](#installation)
-* [Configuring](#installation)
-* [Usage](#installation)
-    * [Using with Sublime Text](#installing-on-windows)
-    * [Using from Command Prompt]()
+* [Downloading](#downloading)
+* [Installation](#installation)
+* [Configuring](#configuring)
+* [Usage](#usage)
+    * [Using in Sublime Text](#using-in-sublime-text)
 
 <section class="wrapper">
 
@@ -47,38 +46,89 @@ It will take you to sourceforge for downloading.
 
 ![alt img](//static.aroliant.net/images/compile.work/gcc-windows/02.jpg)
 
-## Installing
+## Installation
+
 After the download, run the setup as Administrator
+
 ![alt img](//static.aroliant.net/images/compile.work/gcc-windows/03.jpg)
+
 Click on Install
+
 ![alt img](//static.aroliant.net/images/compile.work/gcc-windows/04.jpg)
-It is going to be installed in ``C:\MinGW\`` folder, Click on continue.
+
+It is going to be installed in ``C:\MinGW\`` folder.
+Click on continue.
+
 ![alt img](//static.aroliant.net/images/compile.work/gcc-windows/05.jpg)
-It will fetch and update it's database from the server, click on the continute button when it becomes clickable. 
+
+Then, it will fetch and update it's database from the server, click on the continute button when it becomes clickable. 
+
 ![alt img](//static.aroliant.net/images/compile.work/gcc-windows/06.jpg)
 
+It will be on the Basic Setup Tab by default, there look for ``mingw-32-gcc-g++``, Right Click and Mark for Installation
+
 ![alt img](//static.aroliant.net/images/compile.work/gcc-windows/07.jpg)
+
+Now, Click on the Installation menu and hit Apply Changes.
+
 ![alt img](//static.aroliant.net/images/compile.work/gcc-windows/08.jpg)
+
+It will open the confirmation dialog box, there click on Apply.
+
 ![alt img](//static.aroliant.net/images/compile.work/gcc-windows/09.jpg)
+
+It will start downloading the required files.
+
 ![alt img](//static.aroliant.net/images/compile.work/gcc-windows/10.jpg)
+
+Once the download gets completed it will install the packages, click on **Close** to finish the setup.
+
 ![alt img](//static.aroliant.net/images/compile.work/gcc-windows/11.jpg)
+
+### Checking the Installattion
+
+In order to check whether it has installed correctly or not, you have to go to ``C:\MinGW\bin`` folder . There holding the shift key, right click on the empty area. Click on **Open command window here**
+
 ![alt img](//static.aroliant.net/images/compile.work/gcc-windows/12.jpg)
+
+In the command prompt type the command ``gcc -v`` . It will show the version of GCC installed on your computer. If the output doesn't look similar as this one then there will be some problem in your Installation.
+
 ![alt img](//static.aroliant.net/images/compile.work/gcc-windows/13.jpg)
-![alt img](//static.aroliant.net/images/compile.work/gcc-windows/14.jpg)
-![alt img](//static.aroliant.net/images/compile.work/gcc-windows/15.jpg)
-![alt img](//static.aroliant.net/images/compile.work/gcc-windows/16.jpg)
-![alt img](//static.aroliant.net/images/compile.work/gcc-windows/17.jpg)
-![alt img](//static.aroliant.net/images/compile.work/gcc-windows/18.jpg)
-![alt img](//static.aroliant.net/images/compile.work/gcc-windows/19.jpg)
-![alt img](//static.aroliant.net/images/compile.work/gcc-windows/20.jpg)
-![alt img](//static.aroliant.net/images/compile.work/gcc-windows/21.jpg)
-![alt img](//static.aroliant.net/images/compile.work/gcc-windows/22.jpg)
 
- `C:\MinGW\bin` 
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
 ## Configuring
+
+### Setting the Environment Variable
+
+The purpose of setting the Enviroment Variable is to access the gcc command everywhere in the command prompt. Setting up the enviromnent varaible will tell the system where to look for the gcc command.
+
+Copy the ``C:\MinGW\bin`` path  and click on This PC
+
+![alt img](//static.aroliant.net/images/compile.work/gcc-windows/14.jpg)
+
+Now right click on the empty are and click on Properties.
+
+![alt img](//static.aroliant.net/images/compile.work/gcc-windows/15.jpg)
+
+There choose **Advanced system settings**
+
+![alt img](//static.aroliant.net/images/compile.work/gcc-windows/16.jpg)
+
+It will open the System Propertes dialog box, There click on the **Enviroment Variables**
+
+![alt img](//static.aroliant.net/images/compile.work/gcc-windows/17.jpg)
+
+In the **System variables** section look for **Path** and click on Edit
+
+![alt img](//static.aroliant.net/images/compile.work/gcc-windows/18.jpg)
+
+Append the Path ``C:\MinGW\bin`` in the **Variable Value** and click on OK
+
+![alt img](//static.aroliant.net/images/compile.work/gcc-windows/19.jpg)
+
+That's all now you have successfully configured the GCC Compiler on 
+your Computer.
+
 
 ## Usage
 
@@ -96,10 +146,22 @@ int main(int argc, char const *argv[])
 
 {% endhighlight %}
 
-### Using in Command Prompt
+Copy and paste this program on your Favorite code editor, save it as **sample.c** . If you are still using NotePad you have to read this guide Choosing the Best Code Editor.
 
-### Using in Sublime Text
+![alt img](//static.aroliant.net/images/compile.work/gcc-windows/20.jpg)
 
+### Using from Command Prompt
+
+Right Click on the Windows Icon (Start Menu Icon) and click on **Command Prompt**
+
+
+![alt img](//static.aroliant.net/images/compile.work/gcc-windows/21.jpg)
+
+Navigate the prompt to the place where you have saved the sample program ( use ``cd`` command to navigate ). Then type ``gcc sample.c`` to compile the program. Now a new executable named **a** will be generated in your folder. Type a on the command prompt to run the program.
+
+![alt img](//static.aroliant.net/images/compile.work/gcc-windows/22.jpg)
+
+That's all this is how you have to compile and run C & C++ Programs on Windows.
 
 
 </section>
