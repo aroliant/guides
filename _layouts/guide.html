@@ -5,8 +5,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="blog, accent, {{ site.author }}, {{ site.title }}, jekyll">
-    <meta name="author" content="{{ site.author }}">
+    <meta name="keywords" content="{{ page.keywords }}">
+    <meta name="author" content="{{ page.author }}">
     {% if page.url == "/404.html" %}
         <meta http-equiv="refresh" content="5; url=/">
     {% endif %}
@@ -84,3 +84,16 @@
         {% include analytics.html %}
     {% endif %}
 </body>
+<script type="text/javascript">
+
+mobile_menu.onclick = function(){
+
+    var e = document.querySelector('.guide ul');
+
+    if(e.getAttribute('class') == undefined)
+        e.setAttribute("class","hidden");
+    else
+        e.removeAttribute("class","hidden");
+    
+}
+</script>
