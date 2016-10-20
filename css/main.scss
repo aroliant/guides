@@ -112,6 +112,12 @@
 }
 
 @media screen and (max-width: 800px) {
+    .homepageHolder{
+        max-width: -webkit-calc(800px - (30px)) !important;
+        max-width: calc(800px - (30px)) !important;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
     .wrapper {
         max-width: -webkit-calc(800px - (30px));
         max-width: calc(800px - (30px));
@@ -119,11 +125,20 @@
         padding-left: 15px;
     }
     .guide ul {
-        display: none ;
+        display: none;
+        width: 100% !important;
+        height: 100%;
+        top: 50px;
+        left: 0 !important;
+        overflow-y: hidden !important;
     }
     header ul li.nav-button {
         display: block !important;
     }
+    .docsPreviewHolder li{
+        width: 97% !important;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -152,10 +167,17 @@ header ul li {
 
 header ul li.logo {
     float: left;
+    width: 150px;
+    height: 50px;
+    background-size: 150px;
+}
+
+header ul li.logo a {
     background: url(/images/compile.min.png);
     width: 150px;
     height: 50px;
     background-size: 150px;
+    margin:0;
 }
 
 header ul li.link {
@@ -187,8 +209,12 @@ header ul li a {
     border: 1px solid #EEE;
     width: 250px;
     left: 5px;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
+    height: 80%;
+    box-shadow: 4px 1px 19px #949393;
+    border: 1px solid #4CAF50;
+    border-top: 5px solid #8BC34A;
 }
 
 .guide ul li ul {
@@ -197,12 +223,50 @@ header ul li a {
     display: inline;
 }
 
-.guide ul li ul li {
-    list-style: none;
-    margin-left: 10px;
-    display: block;
-}
 
-.hidden{
-    display: block !important;
+
+.guide ul li ul li {
+  list-style: none;
+  margin-left: 10px;
+  display: block; }
+
+.hidden {
+  display: block !important; }
+.homepageHolder{
+    max-width: 1000px;
 }
+.homepageHolder h1 {
+  margin: 60px 15px;
+  font-size: 24px;
+  text-align: center; }
+
+.homepageHolder h2 {
+  margin: 0;
+  padding: 15px;
+  background: #EEE; }
+
+.homepageHolder ul {
+  border: 1px solid #EEE;
+  margin-bottom: 10px; }
+
+.homepageHolder ul li a {
+  position: absolute;
+  width: 205px;
+  padding: 5px;
+  font-size: 14px;
+  }
+
+.homepageHolder ul li span {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background: #2196F3; }
+
+.docsPreviewHolder li {
+  width: 32%;
+  height: 60px;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  background: #EEE;
+  }

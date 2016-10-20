@@ -13,7 +13,7 @@ category: installation
 * [Installation](#installation)
 * [Configuring](#configuring)
 * [Usage](#usage)
-    * [Using in Sublime Text](#using-in-sublime-text)
+    * [Using from Command Prompt](#using-from-command-prompt)
 
 <section class="wrapper">
 

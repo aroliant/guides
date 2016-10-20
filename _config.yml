@@ -2,8 +2,8 @@ title: Compile.work - Tutorials & Compilation Guides
 description: >
   Tutorials and Compilation Guides for the Popular Programming Languages. Installing, Setup, Running the compiler Online as well as Offline.
 baseurl: ""
-url: "http://127.0.0.1:4000" 
-#url: "http://docs.compile.work"
+#url: "http://127.0.0.1:4000" 
+url: "http://compile.work/guides/"
 #url: "http://localhost/compile-work/docs/docs"
 twitter_username: aroliant
 github_username:  aroliant

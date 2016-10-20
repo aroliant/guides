@@ -54,14 +54,55 @@
     {% endif %}
 </head>
 <body>
-    <div class="wrapper">
-        <div class="main">
-            <nav class="navbar">
-                
-            </nav>
-            
-        </div>
-    </div>
+
+
+    {% include header.html %}
+
+    <section class="wrapper homepageHolder"> 
+
+    <h1>Guides and Tutorials to Install, Configure the compilers in your Computer</h1>
+
+    <h2>Windows - Recent Updates</h2> 
+
+    <ul class="docsPreviewHolder">
+    {% for doc in site.docs %}
+    <li><span class="windows"></span>
+    <a href="{{ doc.url }}">{{ doc.title }}</a>
+    {{ doc.excerpt }}
+    </li>
+    {% endfor %}
+    </ul>
+
+    
+
+    <h2>Ubuntu - Recent Updates</h2> 
+
+    <ul class="docsPreviewHolder">
+    {% for doc in site.docs %}
+    <li><span class="ubuntu"></span>
+    <a href="{{ doc.url }}">{{ doc.title }}</a>
+    {{ doc.excerpt }}
+    </li>
+    {% endfor %}
+    </ul>
+
+   
+
+    <h2>Raspberry Pi - Recent Updates</h2> 
+
+    <ul class="docsPreviewHolder">
+    {% for doc in site.docs %}
+    <li><span class="raspberrypi"></span>
+    <a href="{{ doc.url }}">{{ doc.title }}</a>
+    {{ doc.excerpt }}
+    </li>
+    {% endfor %}
+    </ul>
+
+    </section>
+
+
+
     {% include footer.html %}
 
     
