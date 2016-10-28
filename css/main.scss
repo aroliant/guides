@@ -11,7 +11,7 @@
 .site-footer {
     border-top: 1px solid #e8e8e8;
     padding: 30px 0;
-    background: #313131 url(../images/pixel.png);
+    background: #313131 url(/guides/images/pixel.png);
     color: #8e8c8c;
     font-size: 14px;
 }
@@ -173,7 +173,7 @@ header ul li.logo {
 }
 
 header ul li.logo a {
-    background: url(/images/compile.min.png);
+    background: url(/guides/images/compile.min.png);
     width: 150px;
     height: 50px;
     background-size: 150px;
@@ -270,3 +270,17 @@ header ul li a {
   padding: 5px;
   background: #EEE;
   }
+.docsPreviewHolder li span.windows {  
+  background: url(/guides/images/os-logos.png);
+  background-position: -7px -6px;
+}
+
+.docsPreviewHolder li span.ubuntu {  
+  background: url(/guides/images/os-logos.png);
+  background-position: -66px -6px;
+}
+
+.docsPreviewHolder li span.raspberrypi {  
+  background: url(/guides/images/os-logos.png);
+  background-position: -120px -6px;
+}
