@@ -9,6 +9,22 @@
             <li><a href="" >Privacy Policy</a></li>
         </ul>        
     </div>
-    <img src="/images/arol.png">
+    <img src="/guides/images/arol.png">
     <p>&copy; Aroliant 2016</p>
 </footer>
+
+<script src="{{ site.url }}/guides/js/jquery.min.js"></script>
+<script src="{{ site.url }}/guides/js/rrssb.min.js"></script>
+
+{% if page.title %}
+    <script src="{{ site.url }}/guides/js/anchor.min.js"></script>
+    <script>
+    anchors.options.placement = 'right'
+    anchors.options.class = 'hide'
+    anchors.add()
+    anchors.remove('.post-title')
+    </script>
+{% endif %}
+{% if site.tracking_id %}
+    {% include analytics.html %}
+{% endif %}

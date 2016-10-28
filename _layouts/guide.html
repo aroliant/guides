@@ -8,7 +8,7 @@
     <meta name="keywords" content="{{ page.keywords }}">
     <meta name="author" content="{{ page.author }}">
     {% if page.url == "/404.html" %}
-        <meta http-equiv="refresh" content="5; url=/">
+        <meta http-equiv="refresh" content="5; url=/guides/">
     {% endif %}
     {% if page.description %}
         {% assign desc = page.description %}
@@ -21,13 +21,9 @@
         {% assign url = site.url | append: site.baseurl | append: page.url %}
     {% endif %}
     <meta name="description" content="{{ desc }}">
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300,500,700|Ubuntu:400,300,300italic,500,700|Montserrat' rel='stylesheet' type='text/css'>
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml" />
-    <link rel="stylesheet" href="{{ site.url }}/css/main.css">
-    {% if site.favicon %}
-        <link rel="icon" type="image/ico" href="{{ site.favicon_location }}">
-        <link rel="shortcut-icon" type="image/ico" href="{{ site.favicon_location }}">
-    {% endif %}
+    
+    {% include header-includes.html %}
+    
     {% if site.twitter_username %}
         <link rel="author" href="https://twitter.com/{{ site.twitter_username }}">
     {% endif %}
@@ -67,23 +63,9 @@
         </main>
         
     </div>
-    {% include footer.html %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="{{ site.url }}/js/rrssb.min.js"></script>
 
-    {% if page.title %}
-        <script src="{{ site.url }}/js/anchor.min.js"></script>
-        <script>
-        anchors.options.placement = 'right'
-        anchors.options.class = 'hide'
-        anchors.add()
-        anchors.remove('.post-title')
-        </script>
-    {% endif %}
-    {% if site.tracking_id %}
-        {% include analytics.html %}
-    {% endif %}
-</body>
+{% include footer.html %}
+
 <script type="text/javascript">
 
 mobile_menu.onclick = function(){
@@ -97,3 +79,6 @@ mobile_menu.onclick = function(){
     
 }
 </script>
+    
+</body>
+
