@@ -2,8 +2,9 @@
 layout: guide
 title:  "Installing PHP 5.6 on Ubuntu 16.04"
 date:   2016-09-12 21:16:29 +0530
-permalink: /guides/installation/ubuntu/16.04/php5.6-php7.0-apache2.html
+permalink: /installation/ubuntu/16.04/php5.6-php7.0-apache2.html
 category: installation
+platform: ubuntu
 ---
 
 {::options parse_block_html="true" /}

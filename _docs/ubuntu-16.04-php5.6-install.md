@@ -2,8 +2,9 @@
 layout: guide
 title:  "Installing PHP 5.6 on Ubuntu 16.04"
 date:   2016-09-12 21:16:29 +0530
-permalink: installation/ubuntu/16.04/php5.6.html
+permalink: /installation/ubuntu/16.04/php5.6.html
 category: installation
+platform: ubuntu
 keywords: php5.6 on ubuntu 16.04, php5 on ubuntu 16.04
 author: jacobsamro
 description: Ubuntu 16.04 has switched to PHP 7.0 with a new infrastructure for PHP package. his tutorial will guide you through the process of installing PHP5 on Ubuntu 16.04

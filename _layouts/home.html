@@ -62,10 +62,13 @@
 
     <ul class="docsPreviewHolder">
     {% for doc in site.docs %}
+    {% if doc.platform == "windows" %}
     <li><span class="windows"></span>
     <a href="/guides{{ doc.url }}">{{ doc.title }}</a>
     {{ doc.excerpt }}
+    {% endif %}
     </li>
+
     {% endfor %}
     </ul>
 
@@ -75,28 +78,33 @@
 
     <ul class="docsPreviewHolder">
     {% for doc in site.docs %}
+    {% if doc.platform == "ubuntu" %}
     <li><span class="ubuntu"></span>
     <a href="/guides{{ doc.url }}">{{ doc.title }}</a>
     {{ doc.excerpt }}
     </li>
+    {% endif %}
     {% endfor %}
     </ul>
 
    
 
-    <h2>Raspberry Pi - Recent Updates</h2> 
+    <!--<h2>Raspberry Pi - Recent Updates</h2> 
 
     <ul class="docsPreviewHolder">
     {% for doc in site.docs %}
+    {% if doc.platform == "raspberrypi" %}
     <li><span class="raspberrypi"></span>
     <a href="/guides{{ doc.url }}">{{ doc.title }}</a>
     {{ doc.excerpt }}
     </li>
+    {% endif %}
     {% endfor %}
     </ul>
-
+    -->
+    
     </section>
-
+    
 
 
     {% include footer.html %}   

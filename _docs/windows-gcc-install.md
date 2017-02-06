@@ -2,8 +2,9 @@
 layout: guide
 title:  "Installing C & C++ Compiler on Windows"
 date:   2016-09-12 21:16:29 +0530
-permalink: installation/windows/gcc.html
+permalink: /installation/windows/gcc.html
 category: installation
+platform: windows
 ---
 
 {::options parse_block_html="true" /}
@@ -106,7 +107,7 @@ Copy the ``C:\MinGW\bin`` path  and click on This PC
 
 ![alt img](//static.aroliant.net/images/compile.work/gcc-windows/14.jpg)
 
-Now right click on the empty are and click on Properties.
+Now right click on the empty area and click on Properties.
 
 ![alt img](//static.aroliant.net/images/compile.work/gcc-windows/15.jpg)
 
@@ -114,7 +115,7 @@ There choose **Advanced system settings**
 
 ![alt img](//static.aroliant.net/images/compile.work/gcc-windows/16.jpg)
 
-It will open the System Propertes dialog box, There click on the **Enviroment Variables**
+It will open the System Properties dialog box, There click on the **Enviroment Variables**
 
 ![alt img](//static.aroliant.net/images/compile.work/gcc-windows/17.jpg)
 

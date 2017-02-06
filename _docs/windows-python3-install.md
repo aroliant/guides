@@ -2,8 +2,9 @@
 layout: guide
 title:  "Installing Python 3 on Windows"
 date:   2016-09-12 21:16:29 +0530
-permalink: installation/windows/python3.html
+permalink: /installation/windows/python3.html
 category: installation
+platform: windows
 ---
 
 {::options parse_block_html="true" /}
