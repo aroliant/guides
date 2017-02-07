@@ -46,31 +46,38 @@ Now lets see how to switch between the two versions
 
 First disable PHP5
 
-``sudo a2dismod php5.6``
+{% highlight shell %}
+sudo a2dismod php5.6``
+{% endhighlight %}
 
 Then enable PHP7
-
+{% highlight shell %}
 ``sudo a2enmod php7.0``
+{% endhighlight %}
 
 Finally restart the server
-
+{% highlight shell %}
 ``sudo service apache2 restart``
+{% endhighlight %}
 
 
 
 ### Switching from php7.0 to php5.6
 
 First disable PHP7
-
+{% highlight shell %}
 ``sudo a2dismod php7.0``
+{% endhighlight %}
 
 Then enable PHP5
-
+{% highlight shell %}
 ``sudo a2enmod php5.6``
+{% endhighlight %}
 
 Finally restart the Server
-
+{% highlight shell %}
 ``sudo service apache2 restart``
+{% endhighlight %}
 
 That's all this is how you can use both PHP5.6 and PHP7.0 in the same machine.
 
