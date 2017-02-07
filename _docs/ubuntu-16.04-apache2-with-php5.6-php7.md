@@ -40,20 +40,38 @@ sudo apt-get install php7.0 php5.6 php5.6-mysql php-gettext php5.6-mbstring php-
 
 ## Switching
 
-## Switching
+Now lets see how to switch between the two versions
 
-Switching from php5.6 to php7.0
+### Switching from php5.6 to php7.0
 
-sudo a2dismod php5.6 ; sudo a2enmod php7.0 ; sudo service apache2 restart
+First disable PHP5
 
-Switching from php7.0 to php5.6
+``sudo a2dismod php5.6``
+
+Then enable PHP7
+
+``sudo a2enmod php7.0``
+
+Finally restart the server
+
+``sudo service apache2 restart``
 
 
-sudo a2dismod php7.0 ; sudo a2enmod php5.6 ; sudo service apache2 restart
 
+### Switching from php7.0 to php5.6
 
+First disable PHP7
 
-That's all this is how you have to compile and run C & C++ Programs on Windows.
+``sudo a2dismod php7.0``
 
+Then enable PHP5
+
+``sudo a2enmod php5.6``
+
+Finally restart the Server
+
+``sudo service apache2 restart``
+
+That's all this is how you can use both PHP5.6 and PHP7.0 in the same machine.
 
 </section>
