@@ -1,7 +1,7 @@
 title: Compile.work - Tutorials & Compilation Guides
 description: >
   Tutorials and Compilation Guides for the Popular Programming Languages. Installing, Setup, Running the compiler Online as well as Offline.
-baseurl: "/guides"
+baseurl: ""
 url: "http://guides.compile.work"
 twitter_username: aroliant
 github_username:  aroliant
@@ -12,4 +12,4 @@ theme: minima
 collections:
   docs:
     output: true
-    permalink: /docs/:name/
+    permalink: /:name/
