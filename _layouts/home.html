@@ -64,7 +64,7 @@
     {% for doc in site.docs %}
     {% if doc.platform == "windows" %}
     <li><span class="windows"></span>
-    <a href="/{{ doc.url }}">{{ doc.title }}</a>
+    <a href="{{ doc.url }}">{{ doc.title }}</a>
     {{ doc.excerpt }}
     {% endif %}
     </li>
@@ -80,7 +80,7 @@
     {% for doc in site.docs %}
     {% if doc.platform == "ubuntu" %}
     <li><span class="ubuntu"></span>
-    <a href="/{{ doc.url }}">{{ doc.title }}</a>
+    <a href="{{ doc.url }}">{{ doc.title }}</a>
     {{ doc.excerpt }}
     </li>
     {% endif %}
@@ -95,7 +95,7 @@
     {% for doc in site.docs %}
     {% if doc.platform == "raspberrypi" %}
     <li><span class="raspberrypi"></span>
-    <a href="/{{ doc.url }}">{{ doc.title }}</a>
+    <a href="{{ doc.url }}">{{ doc.title }}</a>
     {{ doc.excerpt }}
     </li>
     {% endif %}
