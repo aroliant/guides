@@ -1,10 +1,10 @@
 ---
 layout: guide
-title:  "Installing Swift on Ubuntu 16.04"
+title:  "Installing Swift on Raspberry pi"
 date:   2016-09-12 21:16:29 +0530
-permalink: /installation/ubuntu/16.04/swift.html
+permalink: /installation/raspberrypi/swift.html
 category: installation
-platform: ubuntu
+platform: raspberrypi
 ---
 
 {::options parse_block_html="true" /}
@@ -19,7 +19,9 @@ platform: ubuntu
 
 
 ## Introduction
-This is the guide to install the Swift Compiler on Ubuntu. 
+
+This is the guide to install the Swift Compiler on Raspberry pi. 
+
 ## Downloading
 To Download go to the [link](https://swift.org/download/#snapshots)
 

@@ -1,10 +1,10 @@
 ---
 layout: guide
-title:  "Installing Go on Ubuntu 16.04"
+title:  "Installing C# on Raspberry pi"
 date:   2016-09-12 21:16:29 +0530
-permalink: /installation/ubuntu/16.04/go.html
+permalink: /installation/raspberrypi/c-sharp.html
 category: installation
-platform: ubuntu
+platform: raspberrypi
 ---
 
 {::options parse_block_html="true" /}
@@ -13,25 +13,23 @@ platform: ubuntu
 * [Installation](#installation)
 * [Usage](#usage)
 
+
 <section class="wrapper">
 
 
 
 ## Introduction
-
-This is the guide to install the Golang Compiler on Ubuntu. 
+This is the guide to install the C# Compiler on Raspberry pi .
 
 ## Installation
 
-
-
 {% highlight shell %}
-sudo apt-get install golang-go
+sudo apt-get install mono-complete
 {% endhighlight %}
 
 ## Usage
 {% highlight shell %}
-go run filename.go
+mcs filename.cs -out:program.exe ;mono program.exe
 {% endhighlight %}
 
 </section>

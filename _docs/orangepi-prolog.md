@@ -1,10 +1,10 @@
 ---
 layout: guide
-title:  "Installing Go on Ubuntu 16.04"
+title:  "Installing ProLog on Orange pi"
 date:   2016-09-12 21:16:29 +0530
-permalink: /installation/ubuntu/16.04/go.html
+permalink: /installation/orangepi/prolog.html
 category: installation
-platform: ubuntu
+platform: orangepi
 ---
 
 {::options parse_block_html="true" /}
@@ -19,19 +19,23 @@ platform: ubuntu
 
 ## Introduction
 
-This is the guide to install the Golang Compiler on Ubuntu. 
+This is the guide to install the Prolog Compiler on Orange Pi. 
 
 ## Installation
 
 
 
 {% highlight shell %}
-sudo apt-get install golang-go
+sudo apt-get install sudo apt-add-repository ppa:swi-prolog/stable
 {% endhighlight %}
 
-## Usage
 {% highlight shell %}
-go run filename.go
+sudo apt-get update
 {% endhighlight %}
+
+{% highlight shell %}
+sudo apt-get install swi-prolog
+{% endhighlight %}
+
 
 </section>

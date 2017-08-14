@@ -1,10 +1,10 @@
 ---
 layout: guide
-title:  "Installing Go on Ubuntu 16.04"
+title:  "Installing Ruby on Raspberry pi"
 date:   2016-09-12 21:16:29 +0530
-permalink: /installation/ubuntu/16.04/go.html
+permalink: /installation/raspberrypi/ruby.html
 category: installation
-platform: ubuntu
+platform: raspberrypi
 ---
 
 {::options parse_block_html="true" /}
@@ -19,19 +19,22 @@ platform: ubuntu
 
 ## Introduction
 
-This is the guide to install the Golang Compiler on Ubuntu. 
+This is the guide to install the Ruby Compiler on Raspberry Pi. 
 
 ## Installation
 
-
+{% highlight shell %}
+sudo apt-get install Ruby
+{% endhighlight %}
 
 {% highlight shell %}
-sudo apt-get install golang-go
+sudo apt-get update
 {% endhighlight %}
 
 ## Usage
+
 {% highlight shell %}
-go run filename.go
+ruby filename.rb
 {% endhighlight %}
 
 </section>

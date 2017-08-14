@@ -1,10 +1,10 @@
 ---
 layout: guide
-title:  "Installing Go on Ubuntu 16.04"
+title:  "Installing Perl on Raspberry pi"
 date:   2016-09-12 21:16:29 +0530
-permalink: /installation/ubuntu/16.04/go.html
+permalink: /installation/raspberrypi.html
 category: installation
-platform: ubuntu
+platform: raspberrypi
 ---
 
 {::options parse_block_html="true" /}
@@ -15,23 +15,26 @@ platform: ubuntu
 
 <section class="wrapper">
 
-
-
 ## Introduction
 
-This is the guide to install the Golang Compiler on Ubuntu. 
+This is the guide to install the Perl Compiler on Raspberry pi. 
 
 ## Installation
 
 
 
 {% highlight shell %}
-sudo apt-get install golang-go
+sudo apt-get install perl
+{% endhighlight %}
+
+{% highlight shell %}
+sudo apt-get update
 {% endhighlight %}
 
 ## Usage
+
 {% highlight shell %}
-go run filename.go
+perl filename.pl
 {% endhighlight %}
 
 </section>

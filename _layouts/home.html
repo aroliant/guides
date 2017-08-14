@@ -89,7 +89,7 @@
 
    
 
-    <!--<h2>Raspberry Pi - Recent Updates</h2> 
+    <h2>Raspberry Pi - Recent Updates</h2> 
 
     <ul class="docsPreviewHolder">
     {% for doc in site.docs %}
@@ -101,7 +101,20 @@
     {% endif %}
     {% endfor %}
     </ul>
-    -->
+    
+
+    <h2>Organge Pi - Recent Updates</h2> 
+
+    <ul class="docsPreviewHolder">
+    {% for doc in site.docs %}
+    {% if doc.platform == "orangepi" %}
+    <li><span class="raspberrypi"></span>
+    <a href="{{ doc.url }}">{{ doc.title }}</a>
+    {{ doc.excerpt }}
+    </li>
+    {% endif %}
+    {% endfor %}
+    </ul>
     
     </section>
     

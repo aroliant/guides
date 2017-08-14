@@ -1,10 +1,10 @@
 ---
 layout: guide
-title:  "Installing ProLog on Ubuntu 16.04"
+title:  "Installing C&C++ on Raspberry Pi"
 date:   2016-09-12 21:16:29 +0530
-permalink: /installation/ubuntu/16.04/prolog.html
+permalink: /installation/raspberrypi/c-c++.html
 category: installation
-platform: ubuntu
+platform: raspberrypi
 ---
 
 {::options parse_block_html="true" /}
@@ -13,28 +13,36 @@ platform: ubuntu
 * [Installation](#installation)
 * [Usage](#usage)
 
+
+
 <section class="wrapper">
 
 
 
 ## Introduction
-
-This is the guide to install the Prolog Compiler on Ubuntu. 
+This is the guide to install the C&C++ Compiler on Raspberry pi .
 
 ## Installation
 
 
 
 {% highlight shell %}
-sudo apt-get install sudo apt-add-repository ppa:swi-prolog/stable
+sudo apt-get install gcc g++
 {% endhighlight %}
 
 {% highlight shell %}
 sudo apt-get update
 {% endhighlight %}
 
+## Usage
+**For C program**
 {% highlight shell %}
-sudo apt-get install swi-prolog
+gcc -Wall -Wextra -lncurses filename.c -o code &&./code
+{% endhighlight %}
+
+**For C++ program**
+{% highlight shell %}
+g++  -Wall -Wextra -lncurses filename.cpp -o code &&./code
 {% endhighlight %}
 
 

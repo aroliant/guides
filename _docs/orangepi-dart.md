@@ -1,10 +1,10 @@
 ---
 layout: guide
-title:  "Installing Dart on Ubuntu 16.04"
+title:  "Installing Dart on Orange pi"
 date:   2016-09-12 21:16:29 +0530
-permalink: /installation/ubuntu/16.04/dart.html
+permalink: /installation/orangepi/dart.html
 category: installation
-platform: ubuntu
+platform: orangepi
 ---
 
 {::options parse_block_html="true" /}
@@ -19,7 +19,7 @@ platform: ubuntu
 
 ## Introduction
 
-This is the guide to install the Dart Compiler on Ubuntu. 
+This is the guide to install the Dart Compiler on Orange Pi. 
 
 ## Installation
 

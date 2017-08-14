@@ -11,12 +11,15 @@ platform: ubuntu
 
 * [Introduction](#introduction)
 * [Installation](#installation)
+* [Usage](#usage)
 
 <section class="wrapper">
 
 
 
 ## Introduction
+
+This is the guide to install the Cobol Compiler on Ubuntu.  
 
 ## Installation
 
