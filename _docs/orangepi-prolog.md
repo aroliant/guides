@@ -1,6 +1,6 @@
 ---
 layout: guide
-title:  "Installing ProLog on Orange pi"
+title:  "Installing ProLog on Orange Pi"
 date:   2016-09-12 21:16:29 +0530
 permalink: /installation/orangepi/prolog.html
 category: installation

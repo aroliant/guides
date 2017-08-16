@@ -1,6 +1,6 @@
 ---
 layout: guide
-title:  "Installing ProLog on Raspberry pi"
+title:  "Installing ProLog on Raspberry Pi"
 date:   2016-09-12 21:16:29 +0530
 permalink: /installation/raspberrypi/prolog.html
 category: installation

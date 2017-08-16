@@ -1,6 +1,6 @@
 ---
 layout: guide
-title:  "Installing Ocaml on Raspberry pi"
+title:  "Installing Ocaml on Raspberry Pi"
 date:   2016-09-12 21:16:29 +0530
 permalink: /installation/raspberrypi/ocaml.html
 category: installation

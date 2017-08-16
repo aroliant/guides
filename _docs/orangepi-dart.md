@@ -1,6 +1,6 @@
 ---
 layout: guide
-title:  "Installing Dart on Orange pi"
+title:  "Installing Dart on Orange Pi"
 date:   2016-09-12 21:16:29 +0530
 permalink: /installation/orangepi/dart.html
 category: installation

@@ -1,6 +1,6 @@
 ---
 layout: guide
-title:  "Installing Swift on Orange pi"
+title:  "Installing Swift on Orange Pi"
 date:   2016-09-12 21:16:29 +0530
 permalink: /installation/orangepi/swift.html
 category: installation

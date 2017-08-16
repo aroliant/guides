@@ -1,6 +1,6 @@
 ---
 layout: guide
-title:  "Installing Dart on Raspberry pi"
+title:  "Installing Dart on Raspberry Pi"
 date:   2016-09-12 21:16:29 +0530
 permalink: /installation/raspberrypi/dart.html
 category: installation
