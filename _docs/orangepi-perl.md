@@ -33,8 +33,18 @@ sudo apt-get update
 
 ## Usage
 
+Sample program:
+
+
+```
+print "Hello, Its perl here"
+```
+
+To run this Program enter the following command in command line.
 {% highlight shell %}
 perl filename.pl
 {% endhighlight %}
+
+
 
 </section>

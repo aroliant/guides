@@ -22,20 +22,30 @@ platform: orangepi
 This is the guide to install the Prolog Compiler on Orange Pi. 
 
 ## Installation
-
-
-
-{% highlight shell %}
-sudo apt-get install sudo apt-add-repository ppa:swi-prolog/stable
-{% endhighlight %}
-
-{% highlight shell %}
-sudo apt-get update
-{% endhighlight %}
-
 {% highlight shell %}
 sudo apt-get install swi-prolog
 {% endhighlight %}
+
+## Usage
+
+Sample program:
+
+
+```
+
+?- write('Hello world!'), nl.
+Hello world!
+true.
+
+?-
+```
+
+To run this Program enter the following command in command line.
+{% highlight shell %}
+ swipl -s hello.pl -g go -t halt
+
+{% endhighlight %}
+
 
 
 </section>

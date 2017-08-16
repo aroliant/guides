@@ -24,7 +24,7 @@ This is the guide to install the Ruby Compiler on Orange Pi.
 ## Installation
 
 {% highlight shell %}
-sudo apt-get install Ruby
+sudo apt-get install ruby
 {% endhighlight %}
 
 {% highlight shell %}
@@ -33,8 +33,19 @@ sudo apt-get update
 
 ## Usage
 
+
+Sample program:
+
+
+```
+print "Hello, Its ruby here"
+```
+
+To run this Program enter the following command in command line.
 {% highlight shell %}
 ruby filename.rb
 {% endhighlight %}
+
+
 
 </section>

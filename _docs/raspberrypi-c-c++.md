@@ -20,7 +20,7 @@ platform: raspberrypi
 
 
 ## Introduction
-This is the guide to install the C&C++ Compiler on Raspberry pi .
+This is the guide to install the C&C++ Compiler on Raspberry Pi .
 
 ## Installation
 
@@ -36,14 +36,48 @@ sudo apt-get update
 
 ## Usage
 **For C program**
+
+Sample program:
+```
+
+#include<stdio.h>
+
+int main(){
+
+printf("Hello");
+
+return 0;
+
+}
+
+```
+To run this Program enter the following command in command line.
 {% highlight shell %}
-gcc -Wall -Wextra -lncurses filename.c -o code &&./code
+- gcc filename.c
+- ./a.out
 {% endhighlight %}
 
 **For C++ program**
-{% highlight shell %}
-g++  -Wall -Wextra -lncurses filename.cpp -o code &&./code
-{% endhighlight %}
 
+Sample program:
+```
+
+#include<iostream>
+
+using namespace std;
+
+int main(){
+
+cout<<"Hello";
+
+return 0;
+
+}
+```
+To run this Program enter the following command in command line.
+{% highlight shell %}
+- g++ filename.cpp
+- ./a.out
+{% endhighlight %}
 
 </section>

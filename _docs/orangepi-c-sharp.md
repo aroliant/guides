@@ -28,8 +28,25 @@ sudo apt-get install mono-complete
 {% endhighlight %}
 
 ## Usage
+
+Sample Program:
+```
+
+using System;
+
+class MyClass
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello, this is C#!");
+
+  }
+}
+```
+To run this Program enter the following command in command line.
 {% highlight shell %}
-mcs filename.cs -out:program.exe ;mono program.exe
+- mcs filename.cs
+- mono filename.exe
 {% endhighlight %}
 
 </section>

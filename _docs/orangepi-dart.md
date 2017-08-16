@@ -26,21 +26,13 @@ This is the guide to install the Dart Compiler on Orange Pi.
 {% highlight shell %}
 sudo apt-get update
 {% endhighlight %}
-
+**Get the Dart file to download**
 {% highlight shell %}
-sudo apt-get install apt-transport-https
+wget https://github.com/dlachausse/dartberrypi/releases/download/v1.8/dart_1.8.3-1_armhf.deb
 {% endhighlight %}
-
-**Get the Google Linux package signing key**
-
+**Install Dart**
 {% highlight shell %}
-sudo sh -c 'curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
-{% endhighlight %}
-
-**Set up the location of the stable repository**
-
-{% highlight shell %}
-sudo sh -c 'curl https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list'
+dpkg -i dart_1.8.3-1_armhf.deb
 {% endhighlight %}
 
 {% highlight shell %}
@@ -48,12 +40,24 @@ sudo apt-get update
 {% endhighlight %}
 
 {% highlight shell %}
-sudo apt-get install dart
+dart --version
 {% endhighlight %}
 
 ## Usage
+
+Sample program:
+
+```
+
+void main(){
+   print("Hello,this is Dart!");
+}
+```
+To run this Program enter the following command in command line.
 {% highlight shell %}
 dart filename.dart
 {% endhighlight %}
 
 </section>
+
+

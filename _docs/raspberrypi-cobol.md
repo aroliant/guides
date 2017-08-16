@@ -17,7 +17,7 @@ platform: raspberrypi
 
 
 ## Introduction
-This is the guide to install the Cobol Compiler on Raspberry pi. 
+This is the guide to install the Cobol Compiler on Raspberry Pi. 
 
 ## Installation
 
@@ -26,9 +26,21 @@ sudo apt-get install open-cobol
 {% endhighlight %}
 
 ## Usage
-{% highlight shell %}
-cobc -x -free filename.cobc -o main;./main
-{% endhighlight %}
 
+Sample program:
+
+```
+
+IDENTIFICATION DIVISION.
+PROGRAM-ID. SAMPLE.
+PROCEDURE DIVISION.
+DISPLAY "Hello, this is COBOL".
+STOP RUN.
+```
+To run this Program enter the following command in command line.
+{% highlight shell %}
+- cobc -x -free filename.cobc
+- ./filename
+{% endhighlight %}
 
 </section>

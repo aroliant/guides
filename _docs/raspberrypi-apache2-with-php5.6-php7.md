@@ -19,7 +19,7 @@ platform: raspberrypi
 
 ## Introduction
 
-Raspberry pi has switched to PHP 7.0 with a new infrastructure for PHP package. So, no, you can't install php5 on Raspberry pi
+raspberrypi has switched to PHP 7.0 with a new infrastructure for PHP package. So, no, you can't install php5 on Raspberry Pi
 
 
 ## Installation

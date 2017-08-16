@@ -29,7 +29,17 @@ sudo apt-get install ocaml
 {% endhighlight %}
 
 ## Usage
+
+Sample program:
+
+
+```
+print_string "Hello this is OCaml!";
+```
+
+To run this Program enter the following command in command line.
 {% highlight shell %}
-ocamlc -o code filename.ml&& ./code
+ ocaml filename.ml
 {% endhighlight %}
+
 </section>

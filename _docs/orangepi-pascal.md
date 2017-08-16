@@ -31,8 +31,21 @@ sudo apt-get install fp-compiler
 
 ## Usage
 
+Sample program:
+
+
+```
+
+begin
+  writeln('Hello, this is Pascal!');
+end.
+```
+
+To run this Program enter the following command in command line.
 {% highlight shell %}
-fpc -vw filename.pas;./code
+ - fpc filename.pas
+ - ./filename
+
 {% endhighlight %}
 
 

@@ -19,7 +19,7 @@ platform: raspberrypi
 
 ## Introduction
 
-This is the guide to install the Golang Compiler on Raspberry pi. 
+This is the guide to install the Golang Compiler on Raspberry Pi. 
 
 ## Installation
 
@@ -30,8 +30,22 @@ sudo apt-get install golang-go
 {% endhighlight %}
 
 ## Usage
+
+Sample program:
+
+```
+
+package main
+
+import "fmt"
+func main() {
+   fmt.Printf("Hello, this is GO!")
+}
+```
+
+To run this Program enter the following command in command line.
 {% highlight shell %}
-go run filename.go
+ go run filename.go
 {% endhighlight %}
 
 </section>
