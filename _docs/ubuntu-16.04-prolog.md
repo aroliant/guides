@@ -11,7 +11,7 @@ platform: ubuntu
 
 * [Introduction](#introduction)
 * [Installation](#installation)
-* [Usage](#usage)
+
 
 <section class="wrapper">
 
